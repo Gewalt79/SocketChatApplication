@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #FFC857;
+  height: 100%;
+}
+
+input, button {
+  color: white;
+  text-align: center;
+  width: 300px;
+  height: 30px;
+  background-color: #011936;
+  font-size: 18px;
+  margin: 10px;
+  cursor: pointer;
+  transition: .05s ease-in;
+ }
+
+/*    STARTING PAGE     */
+
+.start_page {
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-top: 20%;
+  color: white;
+}
+
+.start_page h1 {
+  color: #011936;
+}
+
+.start_page input {
+  border-radius: 10px;
+}
+
+.start_page button {
+  background-color: #FED766;
+  width: 300px;
+  color: #011936;
+  font-weight: bold;
+}
+
+.start_page input::placeholder{
+  font-size: 15px;
+  color: white;
+  opacity: 0.5;
+}
+
+/*    Main Chat      */
+
+.chat {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+  height: 650px;
+  background-color: #011936;
+  margin-top: 10vh;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+/*    Left part of chat application || enter new chat      */
+
+.enter_new_chat {
+  width: 20%;
+  scale: 0.5;
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.enter_new_chat input, button {
+  width: 80%;
+  margin: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ED254E;
+  border-radius: 10px;
+}
+
+.enter_new_chat input {
+  background-color: #F4F4F8;
+  color: #1F2041;
+}
+
+/*    Container with messages      */
+
+.message_box {
+  width: 60%;
+  position: relative;
+  background: #F4F4F8;
+  overflow: overlay;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border-radius: 25px;
+  align-items: center;
+}
+
+.message_box h5 {
+  font-size: 18px;
+}
+
+.message_box h5 p {
+  color: #3ab2da;
+  font-weight: 700;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+/*    Bottom of the chat where you can send messages     */
+
+.chat_box {
+  background-color: #011936;
+  text-align: center;
+  bottom: 0;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  padding-bottom: 10px;
+}
+
+.chat_box input {
+  text-align: left;
+  background-color: #E6E6EA;
+  width: 47%;
+  color: #011936;
+  padding-left: 15px;
+  border-radius: 10px;
+}
+
+.chat_box button {
+  background-color: #ED254E;
+  border-radius: 10px;
+  width: 100px;
+}
+
+/*    Classes for messages     */
+
+.you, .other {
+  display: flex;
+  flex-flow: column;
+  border-radius: 15px;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.other {
+  background-color: #1F2041;
+  color: #fff;
+  display: flex;
+  flex-flow: column;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.you {
+  background-color: #3ab2da;
+  color: #fff;
+  display: flex;
+  flex-flow: column;
+  margin-bottom: 15px;
+  text-align: right;
+}
+
+.you .message_bottom, .other .message_bottom {
+  opacity: .85;
+}
+
+.message_text {
+  text-align: center;
+  font-size: 20px;
+
+}
+
+.message_bottom {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+/*    Right part of chat where you can see other users in chat     */
+
+.Chat_users { 
+  background-color: #011936;
+  width: 20%;
+  color: white;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.Chat_users h5 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.current {
+  background-color: #3ab2da;
+}
+
+.you_user {
+  color: #3ab2da;
+}
